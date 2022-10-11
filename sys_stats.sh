@@ -47,6 +47,7 @@ lscpu | tail -n12 >> cpu
     # 1. Only the name, size, and type of the block devices
     # 2. The output should use ascii characters for any tree formatting
     
+lsblk -i -o NAME,SIZE,TYPE > block_dev    
     
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
