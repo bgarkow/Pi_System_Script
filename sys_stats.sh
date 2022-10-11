@@ -51,4 +51,6 @@ lsblk -i -o NAME,SIZE,TYPE > block_dev
     
 # Output the following information to a file called sata
     # 1. Any Sata devices connected to the machine along with human readable sizes of the devices
-    # 2. More specific information about each device that is connected to the machin
+    # 2. More specific information about each device that is connected to the machine.
+    
+lsscsi -s > sata
