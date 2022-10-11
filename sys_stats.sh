@@ -26,7 +26,7 @@ uname -o >> kernel
 # Output the following information to a file called network
     # 1. Do not print any serial numbers or sensitive information related to the system
     # 2. All network interfaces
-ip link show > network
+sudo lshw -short -sanitize > network
     
     
 # Output the following information to a file called disk.html
