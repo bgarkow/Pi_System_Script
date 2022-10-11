@@ -54,3 +54,4 @@ lsblk -i -o NAME,SIZE,TYPE > block_dev
     # 2. More specific information about each device that is connected to the machine.
     
 lsscsi -s > sata
+sudo hdparm pi >> sata
